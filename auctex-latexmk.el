@@ -54,7 +54,8 @@
 
 ;;; Code:
 
-(require 'tex-buf)
+(unless (require 'tex-buf nil t)
+  (require 'tex))
 (require 'latex)
 
 (defgroup auctex-latexmk nil
